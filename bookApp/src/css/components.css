@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  height: auto;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Header */
+.navbar {
+  margin-top: 30px;
+  padding: 15px 0;
+  background-color: #007bff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffbf00;
+}
+
+.row {
+  margin-top: 30px;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 200px;
+  background: linear-gradient(145deg, #ffffff, #e8e8e8);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Card Image */
+.card img {
+  margin: 0 auto;
+  width: 100px;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(0.9);
+}
+
+/* Card Body */
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  min-height: 48px;
+  max-height: 48px;
+
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.card .detail-button {
+  background-color: #ff5722;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: auto;
+}
+
+.card .detail-button:active {
+  transform: scale(0.98);
+}
+
+/* Spinner */
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+}
+
+/* Responsive Design */
+
+@media (max-width: 576px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .card img {
+    height: 200px;
+  }
+  .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (min-width: 991px) {
+  .card img {
+    height: 200px;
+  }
+  .card-body {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.slider-item {
+  text-align: center;
+}
+
+.slider-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.category-item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Sayfanın genel düzeni için flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Sayfanın yüksekliği tamamen kapsasın */
+  margin: 0; /* Varsayılan margin'i sıfırlıyoruz */
+}
+
+/* İçeriği esnek yapıyoruz ki footer en alta itilsin */
+main {
+  flex-grow: 1; /* İçeriği büyütüp footer'ı en alt kısma çeker */
+}
+
+/* Footer kısmı */
+footer {
+  background-color: #343a40; /* Arka plan rengi */
+  color: #fff; /* Yazı rengi */
+  padding: 20px 0; /* Padding ile yükseklik veriyoruz */
+  text-align: center; /* İçerikleri ortalıyoruz */
+  width: 100%; /* Footer genişliği tüm sayfayı kaplasın */
+  position: relative; /* Konumlandırma için relative */
+  margin-top: auto; /* Footer her durumda altta kalsın */
+}
+
+/* Footer içerisindeki bağlantı stili */
+footer .footer-nav {
+  margin-top: 10px;
+}
+
+footer .footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+footer .footer-nav a:hover {
+  color: #f39c12; /* Hover efekti */
+}
+
+/* Mobil uyumluluk için stil */
+@media (max-width: 576px) {
+  footer .footer-nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
