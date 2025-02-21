@@ -1,50 +1,15 @@
-# React + TypeScript + Vite
+Kitap Arama Uygulaması Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, kullanıcıların kitap arayabileceği ve kitapların detaylarına ulaşabileceği bir React uygulamasıdır. Open Library API'sinden kitap verisi çekilirken, Redux Toolkit ile durum yönetimi sağlanmıştır. React Router ile sayfa geçişleri yapılır ve Axios kullanılarak API entegrasyonu gerçekleştirilmiştir.
 
-Currently, two official plugins are available:
+Kullanılan Teknolojiler:
+React.js
+Redux Toolkit
+React Router
+Axios
+Open Library API
+Bootstrap 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![anasayfa](https://github.com/user-attachments/assets/2769f528-69e6-4d8c-9590-c9c31ef9e340)
+![detay](https://github.com/user-attachments/assets/1f474794-d1c8-4701-b160-4db8ef7ebd64)
+![search](https://github.com/user-attachments/assets/b1a0f213-8f75-4eeb-b2d6-43cd9fca30ad)
